@@ -38,7 +38,6 @@ public class GameScene extends Scene {
 	public Text mGameOverText;
 	public Text mGameOverScoreText;
 
-	public ButtonSprite mPauseButton;
 	public Sprite mBackgroundSprite;
 	public Sprite mExplosionSprite;
 	public Racer mRacer;
@@ -79,7 +78,6 @@ public class GameScene extends Scene {
 		mLives.setText("Lives \n " + mRacer.mLivesLeft);
 		mLevel = new Text(textOffsetX, 340, pResourceManager.mGameFont, "Level\n 0123456789", mContext.getVertexBufferObjectManager());
 
-//		mPauseButton = new ButtonSprite(textOffsetX + 10, 500, pResourceManager.mPauseRegion, pResourceManager.mPausePressedRegion, mContext.getVertexBufferObjectManager());
 		mScore.setText("Score \n 0");
 
 		// menus
@@ -120,7 +118,6 @@ public class GameScene extends Scene {
 		registerTouchArea(mHelpText);
 		registerTouchArea(mPlayText);
 		registerTouchArea(mLevelText);
-//		registerTouchArea(mPauseButton);
 		attachChild(mHelpText);
 		attachChild(mPlayText);
 		attachChild(mLevelText);
@@ -128,7 +125,6 @@ public class GameScene extends Scene {
 		attachChild(mScore);
 		attachChild(mLives);
 		attachChild(mLevel);
-		// attachChild(mPauseButton);
 		attachChild(mRacer);
 		attachChild(mExplosionSprite);
 		sortChildren();
@@ -178,7 +174,6 @@ public class GameScene extends Scene {
 		placeCenter(mGameOverScoreText, pCamera);
 		attachChild(mGameOverText);
 		attachChild(mGameOverScoreText);
-		Log.d("GTXT", mGameOverScoreText.getWidth() + " " + mGameOverScoreText.getX());
 		sortChildren();
 	}
 
@@ -226,7 +221,6 @@ public class GameScene extends Scene {
 	public void onCollision(final Opponent pOpponent, final float pLeftOffset, final float pRightOffset) {
 
 		if (Math.abs(mRacer.getY() - pOpponent.getY()) < mRacer.getHeight() / 2) {
-			Log.i("X", "" + mRacer.getX());
 			mRacer.setX(mRacer.getX() == pLeftOffset ? pLeftOffset + mRacer.getWidth() / 3 : pRightOffset - mRacer.getWidth() / 3);
 		}
 

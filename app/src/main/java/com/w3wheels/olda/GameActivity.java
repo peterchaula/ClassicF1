@@ -341,7 +341,6 @@ public class GameActivity extends SimpleBaseGameActivity implements IGame, IOnSc
     }
 
     public void spawnNewRacer() {
-        Log.i("POOL", "" + mRecyclePool.size());
         final int seed = mGenerator.nextInt(20);
         int gapFactor = 0;
 
@@ -370,6 +369,8 @@ public class GameActivity extends SimpleBaseGameActivity implements IGame, IOnSc
         super.onDestroy();
         if (mModPlayer != null)
             mModPlayer.stop();
+
+        mResourceManager.unloadGame();
     }
 
     @Override
@@ -411,12 +412,10 @@ public class GameActivity extends SimpleBaseGameActivity implements IGame, IOnSc
 
     @Override
     public boolean onSceneTouchEvent(Scene pScene, TouchEvent pSceneTouchEvent) {
-        // TODO Auto-generated method stub
         if (pSceneTouchEvent.isActionOutside()) {
             return true;
         }
         if (pSceneTouchEvent.isActionDown()) {
-            Log.d("TOUCH", pSceneTouchEvent.getX() + " " + pSceneTouchEvent.getY());
             switch (mCurrentGameState) {
                 case GAME_STATE_RUNNING:
                     mRacer.switchSide(LEFT_OFFSET, mRightOffset);
@@ -453,7 +452,6 @@ public class GameActivity extends SimpleBaseGameActivity implements IGame, IOnSc
 
         DisplayMetrics metrics = new DisplayMetrics();
         pContext.getWindowManager().getDefaultDisplay().getMetrics(metrics);
-        Log.i("WIDTH", "" + metrics.widthPixels + " " + metrics.heightPixels);
         final float displayWidth = metrics.widthPixels;
         final float displayHeight = metrics.heightPixels;
         final float aspectRatio = displayWidth / displayHeight;

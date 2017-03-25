@@ -52,22 +52,13 @@ public class ResourceManager {
     public TextureRegion mBackgroundRegion;
     public TextureRegion mRaceCarRegion;
     public TextureRegion mOpponentsRegion;
-    //	public TextureRegion mPauseRegion;
     public TextureRegion mExplosionRegion;
 
-//	public ITexture mHighScoreTexture;
-//	public ITexture mScoreTexture;
-//	public ITexture mLevelTexture;
-//	public ITexture mGamePlayTexture;
-//	public ITexture mFinalScoreTexture;
 
     public Font mGameFont;
     public StrokeFont mGamePlayFont;
 
     public Typeface mTypeface;
-
-    // SplashScene
-    BitmapTextureAtlas mSplashBackgroundTextureAtlas;
 
     public TextureRegion mSplashBackgroundRegion;
 
@@ -166,7 +157,6 @@ public class ResourceManager {
     public void unloadGame() {
         unloadMenu();
         unloadGameFonts();
-        //stop music
     }
 
     public void unloadMenu() {
@@ -174,9 +164,6 @@ public class ResourceManager {
         mMenuTexture.unload();
     }
 
-    public void unloadSplash() {
-        mSplashBackgroundTextureAtlas.unload();
-    }
 
     public void loadGameFonts() {
 
@@ -190,7 +177,6 @@ public class ResourceManager {
         mGamePlayFont = new StrokeFont(mContext.getFontManager(), gamePlayTexture, mTypeface, 96, true, new Color(Color.WHITE), 0, new Color(Color.WHITE));
         gamePlayTexture.load();
         mGamePlayFont.load();
-        Log.i("LOADING", "Loading fonts");
 
     }
 
@@ -221,7 +207,6 @@ public class ResourceManager {
         mGameFont.unload();
     }
 
-    // ======================getters===============================
     public static ResourceManager getManager(SimpleBaseGameActivity pContext) {
         INSTANCE.mContext = pContext;
         pContext.getVertexBufferObjectManager();
