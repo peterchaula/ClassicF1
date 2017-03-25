@@ -1,4 +1,4 @@
-package com.w3wheels.olda.entity;
+package com.github.peterchaula.classicf1.entity;
 
 /**
  * Note: this code is based on

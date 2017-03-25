@@ -1,4 +1,4 @@
-package com.w3wheels.olda.entity;
+package com.github.peterchaula.classicf1.entity;
 
 import org.andengine.entity.sprite.Sprite;
 import org.andengine.opengl.texture.region.ITextureRegion;

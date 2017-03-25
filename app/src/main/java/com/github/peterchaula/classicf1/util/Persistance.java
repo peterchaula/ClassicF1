@@ -1,8 +1,7 @@
-package com.w3wheels.olda.util;
+package com.github.peterchaula.classicf1.util;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.preference.Preference;
 
 public class Persistance {
 

@@ -5,7 +5,7 @@
  * @author Peter
  *
  */
-package com.w3wheels.olda.scene.manager;
+package com.github.peterchaula.classicf1.scene.manager;
 
 import org.andengine.engine.Engine;
 import org.andengine.entity.scene.Scene;

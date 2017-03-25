@@ -1,4 +1,4 @@
-package com.w3wheels.olda.scene;
+package com.github.peterchaula.classicf1.scene;
 
 import java.util.Random;
 
@@ -6,23 +6,19 @@ import org.andengine.engine.Engine;
 import org.andengine.engine.camera.Camera;
 import org.andengine.entity.scene.Scene;
 import org.andengine.entity.scene.menu.MenuScene;
-import org.andengine.entity.sprite.ButtonSprite;
 import org.andengine.entity.sprite.Sprite;
 import org.andengine.entity.text.Text;
 import org.andengine.entity.text.TextOptions;
-import org.andengine.ui.activity.SimpleBaseGameActivity;
 import org.andengine.util.HorizontalAlign;
 import org.andengine.util.color.Color;
 
-import android.util.Log;
-
-import com.w3wheels.olda.GameActivity;
-import com.w3wheels.olda.entity.Opponent;
-import com.w3wheels.olda.entity.Racer;
-import com.w3wheels.olda.entity.VerticalParallaxBackground;
-import com.w3wheels.olda.entity.VerticalParallaxBackground.VerticalParallaxEntity;
-import com.w3wheels.olda.resource.ResourceManager;
-import com.w3wheels.olda.util.Persistance;
+import com.github.peterchaula.classicf1.GameActivity;
+import com.github.peterchaula.classicf1.entity.Opponent;
+import com.github.peterchaula.classicf1.entity.Racer;
+import com.github.peterchaula.classicf1.entity.VerticalParallaxBackground;
+import com.github.peterchaula.classicf1.entity.VerticalParallaxBackground.VerticalParallaxEntity;
+import com.github.peterchaula.classicf1.resource.ResourceManager;
+import com.github.peterchaula.classicf1.util.Persistance;
 
 public class GameScene extends Scene {
 

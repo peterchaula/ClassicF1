@@ -8,16 +8,13 @@
  * @author Peter
  *
  */
-package com.w3wheels.olda.resource;
+package com.github.peterchaula.classicf1.resource;
 
 import java.io.File;
 import java.io.IOException;
 
-import org.andengine.audio.music.Music;
-import org.andengine.audio.music.MusicFactory;
 import org.andengine.audio.sound.Sound;
 import org.andengine.audio.sound.SoundFactory;
-import org.andengine.audio.sound.SoundLibrary;
 import org.andengine.opengl.font.Font;
 import org.andengine.opengl.font.FontFactory;
 import org.andengine.opengl.font.StrokeFont;
@@ -37,7 +34,7 @@ import org.helllabs.android.xmp.ModPlayer;
 import android.graphics.Typeface;
 import android.util.Log;
 
-import com.w3wheels.olda.GameActivity;
+import com.github.peterchaula.classicf1.GameActivity;
 
 public class ResourceManager {
 

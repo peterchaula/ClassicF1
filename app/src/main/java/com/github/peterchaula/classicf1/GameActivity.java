@@ -1,4 +1,4 @@
-package com.w3wheels.olda;
+package com.github.peterchaula.classicf1;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -26,14 +26,12 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.util.DisplayMetrics;
-import android.util.Log;
-import android.view.View;
 
-import com.w3wheels.olda.entity.Opponent;
-import com.w3wheels.olda.entity.Racer;
-import com.w3wheels.olda.resource.ResourceManager;
-import com.w3wheels.olda.scene.GameScene;
-import com.w3wheels.olda.util.Persistance;
+import com.github.peterchaula.classicf1.entity.Opponent;
+import com.github.peterchaula.classicf1.entity.Racer;
+import com.github.peterchaula.classicf1.resource.ResourceManager;
+import com.github.peterchaula.classicf1.scene.GameScene;
+import com.github.peterchaula.classicf1.util.Persistance;
 
 public class GameActivity extends SimpleBaseGameActivity implements IGame, IOnSceneTouchListener, IOnAreaTouchListener {
 

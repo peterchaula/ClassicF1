@@ -1,6 +1,6 @@
-package com.w3wheels.olda;
+package com.github.peterchaula.classicf1;
 
-import com.w3wheels.olda.entity.Opponent;
+import com.github.peterchaula.classicf1.entity.Opponent;
 
 public interface IGame {
 
