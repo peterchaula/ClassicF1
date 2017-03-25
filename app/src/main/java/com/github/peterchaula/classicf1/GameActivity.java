@@ -40,13 +40,11 @@ public class GameActivity extends SimpleBaseGameActivity implements IGame, IOnSc
 
     Camera mCamera;
     GameScene mMainScene;
-    MenuScene mMenuScene;
     ResourceManager mResourceManager;
     VertexBufferObjectManager vbom;
     TimerHandler mLevelHandler;
     Dialog mHelpDialog;
 
-    public float mLeftOffset = 60f;
     public float mRightOffset;
 
     final static int GAME_STATE_DEFAULT = 0;
@@ -60,7 +58,6 @@ public class GameActivity extends SimpleBaseGameActivity implements IGame, IOnSc
     final static float MIN_HEIGHT = -200f;
 
     public static float LEFT_OFFSET = 60f;
-    public static float RIGHT_OFFSET = 195f;
     public static float GAME_SPEED = 4.0f;
 
     public static final int NUM_OF_LIVES = 3;
@@ -73,7 +70,6 @@ public class GameActivity extends SimpleBaseGameActivity implements IGame, IOnSc
 
     public final ArrayList<Opponent> mRacers = new ArrayList<Opponent>();
     public final ArrayList<Opponent> mRecyclePool = new ArrayList<Opponent>();
-    public final ArrayList<Opponent> mTestRacers = new ArrayList<Opponent>();
 
     public ModPlayer mModPlayer;
     Racer mRacer;
@@ -174,7 +170,6 @@ public class GameActivity extends SimpleBaseGameActivity implements IGame, IOnSc
 
         if (currentPositionY != pLastPosY) {
             pOffsetY += (currentPositionY - pLastPosY);
-            pLastPosY = currentPositionY;
             mMainScene.mBackground.setParallaxValue(pOffsetY);
         }
     }
@@ -385,17 +380,17 @@ public class GameActivity extends SimpleBaseGameActivity implements IGame, IOnSc
     public boolean onAreaTouched(TouchEvent pSceneTouchEvent, ITouchArea pTouchArea, float pTouchAreaLocalX, float pTouchAreaLocalY) {
         if (pSceneTouchEvent.isActionDown()) {
             mResourceManager.mMenuClickSound.play();
-            if ((Text) pTouchArea == mMainScene.mPlayText) {
+            if ( pTouchArea == mMainScene.mPlayText) {
                 startGame(true);
                 return true;
-            } else if ((Text) pTouchArea == mMainScene.mHelpText) {
+            } else if (pTouchArea == mMainScene.mHelpText) {
                 GameActivity.this.runOnUiThread(new Runnable() {
                     public void run() {
                         GameActivity.this.mHelpDialog.show();
                     }
                 });
                 return true;
-            } else if ((Text) pTouchArea == mMainScene.mLevelText) {
+            } else if (pTouchArea == mMainScene.mLevelText) {
                 mLevel = !(mLevel > 14) ? mLevel += 1 : 1;
                 mMainScene.updateLevel(mLevel);
                 return true;
@@ -450,8 +445,7 @@ public class GameActivity extends SimpleBaseGameActivity implements IGame, IOnSc
         final float displayWidth = metrics.widthPixels;
         final float displayHeight = metrics.heightPixels;
         final float aspectRatio = displayWidth / displayHeight;
-        final float width = aspectRatio * pWindowHeight;
-        return width;
+        return aspectRatio * pWindowHeight;
 
     }
 }
