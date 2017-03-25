@@ -1,15 +1,19 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 19
+    compileSdkVersion 15
     buildToolsVersion "25.0.2"
 
     defaultConfig {
-        applicationId "com.w3wheels.olda"
         minSdkVersion 8
-        targetSdkVersion 18
+        targetSdkVersion 8
     }
 
+    sourceSets{
+        main{
+            jni.srcDirs = []
+        }
+    }   
     buildTypes {
         release {
             minifyEnabled false
@@ -20,6 +24,4 @@ android {
 
 dependencies {
     compile project(':andEngine')
-    compile project(':andEngineMODPlayerExtension')
-    compile 'com.android.support:support-v4:19.1.0'
 }
