@@ -1,0 +1,2 @@
+set solib-search-path /home/mdstech/AndroidStudioProjects/AndEngine1/app/src/main/obj/local/x86
+directory /home/mdstech/Android/Sdk/ndk-bundle/platforms/android-9/arch-x86 /home/mdstech/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include /home/mdstech/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/x86/include /home/mdstech/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward /home/mdstech/AndroidStudioProjects/AndEngine1/app/src/main/jni

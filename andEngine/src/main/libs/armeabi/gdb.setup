@@ -1,0 +1,2 @@
+set solib-search-path /home/mdstech/AndroidStudioProjects/AndEngine1/app/src/main/obj/local/armeabi
+directory /home/mdstech/Android/Sdk/ndk-bundle/platforms/android-9/arch-arm /home/mdstech/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include /home/mdstech/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi/include /home/mdstech/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward /home/mdstech/AndroidStudioProjects/AndEngine1/app/src/main/jni
