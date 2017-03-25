@@ -41,4 +41,11 @@
         android:text="@string/instructions_text"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/licenses"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
 </LinearLayout>

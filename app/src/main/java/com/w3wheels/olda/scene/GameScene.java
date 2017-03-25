@@ -105,7 +105,8 @@ public class GameScene extends Scene {
 		mGameOverText.setColor(mGameOverTextColor);
 		mGameOverScoreText.setColor(mGameOverTextColor);
 
-		mPlayText.setZIndex(5);
+		mPlayText.setZIndex(6);
+		mLevelText.setZIndex(6);
 		mHelpText.setZIndex(6);
 		mGameOverText.setZIndex(7);
 		mGameOverScoreText.setZIndex(7);
