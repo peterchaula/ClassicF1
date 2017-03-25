@@ -133,7 +133,6 @@ public class GameActivity extends SimpleBaseGameActivity implements IGame, IOnSc
 
     @Override
     public Engine onCreateEngine(EngineOptions pEngineOptions) {
-        // TODO Auto-generated method stub
         return super.onCreateEngine(pEngineOptions);
     }
 
@@ -148,7 +147,6 @@ public class GameActivity extends SimpleBaseGameActivity implements IGame, IOnSc
     @Override
     protected Scene onCreateScene() {
         createHelpDialog();
-//		mResourceManager.mGameMusic.play();
         mMainScene = new GameScene(mResourceManager, mCamera, this);
         mMainScene.initViews(mResourceManager, mCamera);
         mMainScene.updateLevel(mLevel);
@@ -285,7 +283,6 @@ public class GameActivity extends SimpleBaseGameActivity implements IGame, IOnSc
 
     @Override
     public int getLevel() {
-        // TODO Auto-generated method stub
         return 0;
     }
 
