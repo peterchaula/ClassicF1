@@ -375,7 +375,6 @@ public class GameActivity extends SimpleBaseGameActivity implements IGame, IOnSc
         mRecyclePool.add(pOpponent);
     }
 
-    // ===============================Inner classes ====================
     @Override
     public boolean onAreaTouched(TouchEvent pSceneTouchEvent, ITouchArea pTouchArea, float pTouchAreaLocalX, float pTouchAreaLocalY) {
         if (pSceneTouchEvent.isActionDown()) {
