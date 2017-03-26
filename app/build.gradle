@@ -5,7 +5,7 @@ android {
     buildToolsVersion "25.0.2"
 
     defaultConfig {
-        applicationId "com.w3wheels.olda"
+        applicationId "com.github.peterchaula"
         minSdkVersion 8
         targetSdkVersion 18
     }
