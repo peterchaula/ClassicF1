@@ -5,7 +5,7 @@ import android.content.SharedPreferences;
 
 public class Persistance {
 
-	public static final String FILE_KEY = "com.w3wheels.olda.PREFS_KEY";
+	public static final String FILE_KEY = "com.github.peterchaula.classicf1.PREFS_KEY";
 	public static final String HIGH_SCORE_KEY = "high_score";
 	public static final String LEVEL_KEY = "gamel_level";
 
