@@ -1,13 +1,3 @@
-/**
- * @author Peter
- * @author Peter
- * @author Peter
- * @author Peter
- */
-/**
- * @author Peter
- *
- */
 package com.github.peterchaula.classicf1.resource;
 
 import java.io.File;
@@ -39,12 +29,6 @@ import com.github.peterchaula.classicf1.GameActivity;
 public class ResourceManager {
 
     private SimpleBaseGameActivity mContext;
-
-    // Game
-    public BitmapTextureAtlas mBackgroundTextureAtlas;
-    public BitmapTextureAtlas mRaceCarTextureAtlas;
-    public BitmapTextureAtlas mOpponentsTextureAtlas;
-    public BitmapTextureAtlas mPauseTextureAtlas;
 
     public TextureRegion mBackgroundRegion;
     public TextureRegion mRaceCarRegion;
@@ -209,6 +193,4 @@ public class ResourceManager {
         pContext.getVertexBufferObjectManager();
         return INSTANCE;
     }
-
-
 }
